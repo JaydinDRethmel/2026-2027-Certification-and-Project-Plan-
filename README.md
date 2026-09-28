@@ -34,3 +34,41 @@ This repository is the outline of Certifications and projects that I plan to acq
     - Hosting & CI/CD: AWS Amplify Hosting
     - CDN & Caching: Amazon CloudFront
     - SSL / HTTPS: AWS Certificate Manager
+  
+  2. Real - Time Multimodal Content Safety & NLP Analytics Pipeline
+
+    An automated system that ingest user text and images (especially product review or social media posts) steams them through an ETL pipline, processes them with quantized Deep Learning models (Sentiment, Toxicity, image Classification), and serves interactive visual analytics throguh an Angular web dashboard
+
+    Current Technology Stack / Architecture:
+      - Frontend Framework: Angular
+          - Hosted On: Vercel
+      - API Gateway: FastAPI
+          - Hosted On: Hugging Face Spaces
+      - Data Orchestration: Prefect
+      - Database: PostgreSQL + AWS S3
+          - Hosted On: Supabase + AWS S3
+      - ML Models: ONNX Runtime / Hugging Face Transformers
+          - Hosted On: Hugging Face Docker Container
+
+    System Architecture:
+      ┌────────────────────────────────────────────────────────┐
+      │        ANGULAR PORTFOLIO SITE (Vercel / Netlify)       │
+      │  - Real-time prediction dashboard                      │
+      │  - Reactive forms (RxJS) & Chart.js data visuals       │
+      └───────────────────────────┬────────────────────────────┘
+                                  │ (REST / WebSocket)
+                                  ▼
+      ┌────────────────────────────────────────────────────────┐
+      │        FASTAPI / DOCKER BACKEND (Hugging Face)         │
+      │  - Heavy inference (PyTorch/ONNX with 16GB RAM)        │
+      │  - Input validation, pre-processing, post-processing   │
+      └─────────────┬────────────────────────────┬─────────────┘
+                    │                            │
+                    ▼                            ▼
+      ┌──────────────────────────┐   ┌──────────────────────────┐
+      │  DATABASE (Supabase)     │   │   STORAGE (AWS S3)       │
+      │  - Raw/Processed Logs    │   │  - Saved Image Artifacts │
+      │  - Data Engineering Sink │   │  - Model Metadata        │
+      └──────────────────────────┘   └──────────────────────────┘
+
+      
