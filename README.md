@@ -4,8 +4,12 @@ This repository is the outline of Certifications and projects that I plan to acq
 ## School Projects
   1. Undergraduate Research (Dynamic Resource Allocation in Cloud Distribution Systems)
        
-    Thesis: A hybrid dynamic resource allocation framework combining predictive deep-learning schedulers for baseline demand with Online Convex Optimization
-    for real-time drift correction achieves lower operational costs while maintaining SLA guarantees under non-stationary traffic
+    Thesis: A hybrid dynamic resource allocation framework
+    combining predictive deep-learning schedulers for
+    baseline demand with Online Convex Optimization
+    for real-time drift correction achieves
+    lower operational costs while maintaining SLA
+    guarantees under non-stationary traffic
 
     This project is hosted on this repository:
 
@@ -25,8 +29,10 @@ This repository is the outline of Certifications and projects that I plan to acq
 ## Personal Projects
   1. Create Personal Website
   
-    This webpage will be hosted at jaydinRethmel.com and will be my first project of the 2026 summer.
-    This webpage will include the Homepage (General Summary of Bio, Education, Certification, Projects, and Experience),
+    This webpage will be hosted at jaydinRethmel.com
+    and will be my first project of the 2026 summer.
+    This webpage will include the Homepage 
+    (General Summary of Bio, Education, Certification, Projects, and Experience),
     the Bio page, Education, Certification, Projects, and Experience
   
     Current Technology Stack / Architecture:
@@ -37,7 +43,12 @@ This repository is the outline of Certifications and projects that I plan to acq
   
   2. Real - Time Multimodal Content Safety & NLP Analytics Pipeline
 
-    An automated system that ingest user text and images (especially product review or social media posts) steams them through an ETL pipline, processes them with quantized Deep Learning models (Sentiment, Toxicity, image Classification), and serves interactive visual analytics throguh an Angular web dashboard
+    An automated system that ingest user text and images
+    (especially product review or social media posts)
+    steams them through an ETL pipline, processes them
+    with quantized Deep Learning models (Sentiment, Toxicity, image Classification),
+    and serves interactive visual analytics
+    throguh an Angular web dashboard
 
     Current Technology Stack / Architecture:
       - Frontend Framework: Angular
@@ -71,4 +82,3 @@ This repository is the outline of Certifications and projects that I plan to acq
       │  - Data Engineering Sink │   │  - Model Metadata        │
       └──────────────────────────┘   └──────────────────────────┘
 
-      
